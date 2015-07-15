@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_did"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_did"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tv_pwd"
+            android:gravity="center"
+            android:text="Did:" />
+
+        <EditText
+            android:id="@+id/et_did"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/tv_did"
+            android:text="SNCU-000110-DMYBX" />
+
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_did"
+            android:gravity="center"
+            android:text="PassWord:" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_did"
+            android:layout_toRightOf="@id/tv_pwd"
+            android:text="123456" >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/bt_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search palals"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bt_search"
+                    android:text="Connect to palals"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_disconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bt_connect"
+                    android:text="Disconnect palals"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_changepwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_search"
+                    android:text="Edit palals"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_p2p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_changepwd"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_p2p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_status_p2p"
+                    android:layout_alignBottom="@+id/tv_status_p2p"
+                    android:layout_toRightOf="@+id/tv_status_p2p"
+                    android:text="unKnown" />
+
+                <Button
+                    android:id="@+id/bt_jsontree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_status_p2p"
+                    android:text="Acquire device information"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_eventlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/bt_jsontree"
+                    android:layout_toRightOf="@+id/bt_jsontree"
+                    android:text="Obtain event information"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_modityitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/bt_additem"
+                    android:layout_toRightOf="@+id/bt_additem"
+                    android:text="Modify device"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_additem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/bt_jsontree"
+                    android:text="Add device"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_slotoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/bt_sloton"
+                    android:layout_toRightOf="@+id/bt_sloton"
+                    android:text="Close socket"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_sloton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_additem"
+                    android:text="Open socket"
+                    android:textSize="15sp" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bt_jsontree"
+                    android:layout_below="@+id/bt_slotoff" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/bt_addarmmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add armed group"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_modifyarmmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Modify armed group"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_removesarmmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remove armed group"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_operatearmmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Switch Arming group"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_addtoarmmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add devices to armed group"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_rmfromarmmodel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remove devices from armed group"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/scrollView1"
+                    android:layout_below="@+id/scrollView1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/bt_rmevent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delete event"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_changeevent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Modify event"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/bt_checkfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizontalScrollView1"
+                    android:text="Check for updates"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_subscribeToken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_checkfirm"
+                    android:text="InitialIPN"
+                    android:textSize="15sp" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bt_subscribeToken" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/bt_subscribePalalsPush"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe to push"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_subscribeXinGe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe to XinGe"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_subscribeVoIp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe Voip"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_subscribeEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subscribe to Email"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/bt_upgradefirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/bt_checkfirm"
+                    android:layout_toRightOf="@+id/bt_checkfirm"
+                    android:text="Confirming update"
+                    android:textSize="15sp" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizontalScrollView2" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/bt_unsubscribePalalsPush"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="unsubscribe palals push"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_unsubscribeXinGe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="unsubscribe xinge"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_unsubscribeVoIp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unsubscribe voip"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/bt_unsubscribeEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="unsubscripe email"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/bt_removeitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/bt_modityitem"
+                    android:layout_toRightOf="@+id/bt_modityitem"
+                    android:text="Remove device"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_addcamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/bt_removeitem"
+                    android:layout_toRightOf="@+id/bt_removeitem"
+                    android:text="addCam"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_updatecamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/bt_eventlist"
+                    android:layout_alignBottom="@+id/bt_eventlist"
+                    android:layout_alignRight="@+id/bt_addcamera"
+                    android:text="updateCam" 
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/bt_uncode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/status_p2p"
+                    android:layout_alignLeft="@+id/bt_connect"
+                    android:text="Uncode / analytical dimensional code"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:singleLine="false"
+            />
+        </ScrollView>
+
+        
+    </LinearLayout>
+
+</LinearLayout>

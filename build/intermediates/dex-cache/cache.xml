@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sid/code/android/Palals0.1/app/libs/palals-1.0.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d7ea1b57c4d3c563c6f5797917642c452d45812b">
+        <dex dex="/home/sid/code/android/Palals0.1/app/build/intermediates/pre-dexed/debug/palals-1.0.1-be6943101be2d04ba57b42ba2fadef9981e29ba8.jar" />
+    </item>
+    <item
+        jar="/home/sid/code/android/Palals0.1/app/libs/zxing.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="/home/sid/code/android/Palals0.1/app/build/intermediates/pre-dexed/debug/zxing-72d05332e0f4942286fc093614f5cc925acafb62.jar" />
+    </item>
+    <item
+        jar="/home/sid/code/android/Palals0.1/app/libs/mqtt.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02315d1759d01e52495e040e6e538aaa2e91c7f6">
+        <dex dex="/home/sid/code/android/Palals0.1/app/build/intermediates/pre-dexed/debug/mqtt-5ad0983153cb959c1e75366c5b1303679a73180e.jar" />
+    </item>
+    <item
+        jar="/home/sid/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/home/sid/code/android/Palals0.1/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-2fcdaa14502de78b27d4b895603aa741eef298fa.jar" />
+    </item>
+
+</items>
