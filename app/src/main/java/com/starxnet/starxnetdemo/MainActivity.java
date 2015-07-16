@@ -378,11 +378,11 @@ public class MainActivity extends Activity implements SensorInterface,
 				break;
 			case R.id.bt_modityitem:
 				modifyItem("3", "yes", "ttyS0", "", "YCF208MC-1527-433",
-						"门窗报警测试1232131", "Open", "OpenClose", "2", true,
+						"Door Alarm Test 1232131", "Open", "OpenClose", "2", true,
 						"ttyS0=433/850948", "850948");
 				break;
 			case R.id.bt_addarmmodel:
-				addArmModel("5", "布防组1", "no");
+				addArmModel("5", "Arming group 1", "no");
 				break;
 			case R.id.bt_operatearmmodel:
 				operateArmModel("11", "yes");
@@ -391,14 +391,14 @@ public class MainActivity extends Activity implements SensorInterface,
 				removeArmModel("5");
 				break;
 			case R.id.bt_modifyarmmodel:
-				changeLinkArmName("11", "布防组2", "no");
+				changeLinkArmName("11", "Arming group 2", "no");
 				break;
 			case R.id.bt_addtoarmmodel:
-				addLinkSource("1", "15", "门窗报警测试1", "Open", "OpenClose",
+				addLinkSource("1", "15", "Door alarm test 1", "Open", "OpenClose",
 						"ttyS0=433/850948");
 				break;
 			case R.id.bt_rmfromarmmodel:
-				removeLinkSource("1", "15", "门窗报警测试1", "Open", "OpenClose",
+				removeLinkSource("1", "15", "Door alarm test 1", "Open", "OpenClose",
 						"ttyS0=433/850948");
 				break;
 			case R.id.bt_rmevent:
