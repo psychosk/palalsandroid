@@ -352,13 +352,13 @@ public class MainActivity extends Activity implements SensorInterface,
 						"SK-5808A-1B");
 				break;
 			case R.id.bt_additem:
-				addItem("850948", "", "ttyS0", "yes", "门窗报警测试1234",
+				addItem("850948", "", "ttyS0", "yes", "Door Alarm Test 1234",
 						"YCF208MC-1527-433", "Open", "OpenClose", "2",
 						"ttyS0=433/850948");
 				break;
 			case R.id.bt_removeitem:
 				removeItem("3", "ttyS0", "", "YCF208MC-1527-433",
-						"门窗报警测试1234", "2", true, "ttyS0=433/850948", "850948",
+						"Door Alarm Test 1234", "2", true, "ttyS0=433/850948", "850948",
 						"3");
 				break;
 			case R.id.bt_search:
