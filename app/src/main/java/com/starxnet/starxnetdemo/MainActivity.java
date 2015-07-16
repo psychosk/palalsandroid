@@ -598,12 +598,12 @@ public class MainActivity extends Activity implements SensorInterface,
 		nm.updateXGPush(jsonroot.toString(), token, new onXinGeCallBack() {
 			@Override
 			public void onSuccess(int resultcode) {
-				System.out.println("成功");
+				System.out.println("Success");
 			}
 
 			@Override
 			public void onFailed(int resultcode) {
-				System.out.println("失败，code=" + resultcode);
+				System.out.println("Failure，code=" + resultcode);
 			}
 		});
 	}
